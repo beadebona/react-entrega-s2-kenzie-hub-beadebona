@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
     max-width: ${props=>props.header? "100vw": "350px"};
+    width: ${props=>props.header? "100vw": "90%"};
     display: flex;
     align-items: center;
     justify-content:${props=>props.header? "space-around;": "space-between;"};

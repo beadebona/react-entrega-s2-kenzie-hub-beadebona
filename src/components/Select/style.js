@@ -15,7 +15,7 @@ const StyledSelect = styled.div`
         height: 40px;
         background: var(--grey-2);
         color: var(--grey-1);
-        padding: 0 10px;
+        padding: 0 1rem;
         border: 1px solid var(--grey-2);
         border-radius: 4px;
         margin: 10px 0;
