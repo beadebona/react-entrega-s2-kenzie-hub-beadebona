@@ -1,19 +1,17 @@
 import { useHistory } from "react-router-dom"
 import Button from "../../components/Button"
+import Header from "../../components/Header"
 import Input from "../../components/Input"
-import Logo from "../../components/Logo"
 import Select from "../../components/Select"
 import Container from "../Login/style"
-import StyledDiv from "./style"
+
 
 const SignUp = ()=>{
     const history = useHistory()
+
     return(
         <>
-        <StyledDiv>
-            <Logo/>
-            <Button onClick={()=> history.push('/')} text="Voltar"/>   
-        </StyledDiv>
+        <Header text="Voltar" onClick={()=>history.push('/')} />
 
         <Container>
             <h2>Crie sua conta</h2>
@@ -26,9 +24,6 @@ const SignUp = ()=>{
                 
                     
                 <Select/>
-              
-                
-
                 <Button text="Cadastrar"/>
             </form>
         </Container>

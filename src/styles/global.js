@@ -23,12 +23,12 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     background-color: var(--grey-4);
-    color: var(--grey-0);
 }
 
 body, input, button, select{
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    color: var(--grey-0);
 }
 
 button{

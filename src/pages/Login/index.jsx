@@ -23,7 +23,7 @@ const Login = ()=>{
                 <Link>Cadastre-se</Link> */}
             </form> 
             <span>Ainda não possui uma conta?</span>  
-            <Button text="Cadastre-se" onClick={() => history.push("/cadastro")}/>
+            <Button greySchema="true" text="Cadastre-se" onClick={() => history.push("/cadastro")}/>
         </Container>
     </>
     )
