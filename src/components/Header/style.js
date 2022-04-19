@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
     max-width: ${props=>props.header? "100vw": "350px"};
-    width: ${props=>props.header? "100vw": "90%"};
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content:${props=>props.header? "space-around;": "space-between;"};
+    justify-content: space-between;
     margin: 0 auto;
-    border-bottom: ${props=>props.header? "solid 1px #212529": "none"};
 
     button{
         width:60px;
@@ -21,6 +20,10 @@ const StyledHeader = styled.header`
     }
     button:hover{
         background: var(--grey-2)
+    }
+
+    @media screen and (min-width: 800px){
+        width: ${props=>props.header? "60%": "90%"};   
     }
 
 `

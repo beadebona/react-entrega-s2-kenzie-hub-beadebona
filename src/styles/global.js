@@ -38,6 +38,12 @@ button{
 a{
     text-decoration: none;
 }
+
+hr{
+    height: 1px;
+    background-color: var(--grey-3);
+    border: none;
+}
 `
 
 export default GlobalStyle
