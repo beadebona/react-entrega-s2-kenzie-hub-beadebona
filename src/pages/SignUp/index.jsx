@@ -11,6 +11,7 @@ import React from 'react'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 import { Redirect } from "react-router-dom"
+import Logo from "../../components/Logo"
 
 const SignUp = ({authenticated})=>{
     const history = useHistory()
@@ -59,7 +60,9 @@ const SignUp = ({authenticated})=>{
 
     return(
         <>
-        <Header text="Voltar" onClick={()=>history.push("/")} />
+        <Header text="Voltar" onClick={()=>history.push("/")} >
+            <Logo/>
+        </Header>
 
         <Container>
             <h2>Crie sua conta</h2>
@@ -71,7 +74,12 @@ const SignUp = ({authenticated})=>{
                 <Input placeholder="Fale um pouco de você" name="bio" label="Bio" register={register}/>
                 <Input placeholder="Digite sua senha" name="password" type="password" label="Senha" register={register}/>
                 <Input placeholder="Digite sua senha" name="passwordConfirm" type="password" label="Confirmar Senha" register={register} />       
-                <Select name="course_module" register={register} />
+                <Select name="course_module" register={register} text="Módulo">
+                    <option value="Primeiro módulo (Introdução ao Frontend)">Primeiro módulo (Introdução ao Frontend) </option>
+                    <option value="Segundo módulo (Frontend Avançado)">Segundo módulo (Frontend Avançado)</option>
+                    <option value="Terceiro módulo (Introdução ao Backend)">Terceiro módulo (Introdução ao Backend)</option>
+                    <option value="Quarto módulo (Backend Avançado)">Quarto módulo (Backend Avançado)</option>
+                </Select>
                 <Button type="submit" text="Cadastrar"/>
             </form>
         </Container>

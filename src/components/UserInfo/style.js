@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 const StyledInfo = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;  
+    flex-direction: column;
     align-items: center;
     width: 90%;
     height: 15vh;
@@ -16,9 +17,15 @@ const StyledInfo = styled.div`
         color: var(--grey-1);
         font-size: 12px;
     }
+    @media screen and (min-width: 500px){
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     @media screen and (min-width: 800px){
-        width: 60%;   
+        width: 60%; 
+        justify-content: space-between;
+        flex-direction: row;
     }
 
 `

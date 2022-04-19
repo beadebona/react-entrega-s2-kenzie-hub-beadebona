@@ -1,10 +1,9 @@
-import Logo from "../Logo";
 import StyledHeader from "./style";
 
-const Header = ({header, text, ...rest})=>{
+const Header = ({ children, header, text, ...rest})=>{
     return(
         <StyledHeader header={header}>
-            <Logo/>
+            {children}
             <button {...rest}>{text}</button>
         </StyledHeader>
 

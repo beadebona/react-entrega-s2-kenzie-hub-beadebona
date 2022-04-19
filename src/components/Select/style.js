@@ -7,6 +7,10 @@ const StyledSelect = styled.div`
     select:focus-within{
         border: 1px solid var(--grey-0);
     }
+    label{
+        color: var(--grey-0);
+        font-size: 12px;
+    }
 
     select{
         border-radius:4px;

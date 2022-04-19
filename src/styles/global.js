@@ -15,10 +15,12 @@ const GlobalStyle = createGlobalStyle`
     --grey-0: #F8F9FA;
     --grey-1: #868E96;
     --grey-2: #343B41;
-    --grey-3: #212520;
+    --grey-3: #212529;
     --grey-4: #121214;
-    --sucess: #3fe864;
-    --error: #e83f5b;
+    --toastify-color-success:   #3fe864;
+    --toastify-color-error:     #e83f5b;
+    --toastify-text-color-dark: #F8F9FA;
+    --toastify-color-dark:      #343B41;
 }
 
 body{

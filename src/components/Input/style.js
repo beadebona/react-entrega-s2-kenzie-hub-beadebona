@@ -21,7 +21,8 @@ const StyledInput = styled.div`
     }
 
     label{
-        font-size: 10px;
+        font-size: 12px;
+        color: var(--grey-0)
     }
     
     input{
