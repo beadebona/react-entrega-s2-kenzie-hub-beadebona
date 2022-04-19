@@ -19,7 +19,7 @@ const Dashboard = ({authenticated, setAuthenticated, user, setUser}) =>{
     const [ title, setTitle] = useState("")
     const [ status, setStatus] = useState("Iniciante")
     const [id, setId] = useState("")
-    
+
     const loadTechs = ()=>{
         axios
         .get(`https://kenziehub.herokuapp.com/users/${user.id}`)
@@ -29,7 +29,6 @@ const Dashboard = ({authenticated, setAuthenticated, user, setUser}) =>{
     useEffect(() => {
         loadTechs()
     } , [])
-    // .catch(_ => toast.error("Email/senha incorreto!", {theme: "dark"}))
 
     const handleModal = (data) =>{
         setModal(true)
