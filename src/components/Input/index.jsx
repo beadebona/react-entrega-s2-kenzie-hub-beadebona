@@ -1,11 +1,14 @@
 import StyledInput from "./style";
 
-const Input = ({label, ...rest}) =>{
+const Input = ({label, name, register, ...rest}) =>{
     return(
         <StyledInput>
             <label>{label}</label>
             <div>
-                <input {...rest}/>
+                <input 
+                {...rest} 
+                {...register(name)}
+                  />
             </div>
         </StyledInput>
     )

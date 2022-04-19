@@ -1,6 +1,8 @@
 import './App.css';
 import Routes from './routes';
 import GlobalStyle  from './styles/global';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -8,6 +10,7 @@ const App = () => {
     <div className="App">
       <GlobalStyle/>
       <Routes/>
+      <ToastContainer/>
     </div>
   );
 }
