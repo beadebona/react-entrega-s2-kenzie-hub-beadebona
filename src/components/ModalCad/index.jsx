@@ -29,7 +29,7 @@ const ModalCad = ({modalCad, setModalCad, loadTechs}) =>{
             toast.success("Tecnologia adicionada!", {theme: "dark"})
         })
         .catch(_ => {
-            toast.error("Ops! Algo deu errado", {theme: "dark"})
+            toast.error("Tente uma nova tecnologia!", {theme: "dark"})
         })
     
     }

@@ -49,7 +49,7 @@ const SignUp = ({authenticated})=>{
         .post("https://kenziehub.herokuapp.com/users/", user)
         .then((_) => {
             toast.success("Conta criada com sucesso!", {theme: "dark"})
-            history.push("/login")
+            history.push("/")
         })
         .catch(_ => toast.error("Ops! Algo deu errado", {theme: "dark"}))
 
